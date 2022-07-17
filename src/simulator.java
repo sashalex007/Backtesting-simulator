@@ -108,10 +108,10 @@ public class simulator {
             return result;
         }
 
-        private void tradingAlgo(String actionFib) {
-            String action = utils.splitString(actionFib)[0];
-            double price = Double.parseDouble(utils.splitString(actionFib)[1]);
-            double time = Double.parseDouble(utils.splitString(actionFib)[2]);
+        private void tradingAlgo(String tradingAction) {
+            String action = utils.splitString(tradingAction)[0];
+            double price = Double.parseDouble(utils.splitString(tradingAction)[1]);
+            double time = Double.parseDouble(utils.splitString(tradingAction)[2]);
 
 
             if (action.equals("buy") && !inMarket) {
