@@ -34,7 +34,6 @@ public class ichimoku {
             double[] previousCandle = array.get(array.size() - 2);
             double time = latestCandle[4];
 
-            //1.069
             //1.0465 backtested for 5m ===> 0.4 btc
             if (leadingA / price > ratio && leadingB > leadingA) {
                 //buy
